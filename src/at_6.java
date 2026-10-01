@@ -4,8 +4,14 @@ public class at_6 {
     static void main() {
         Scanner sc = new Scanner(System.in);
         System.out.println("digite um numero");
-        int num = sc.nextInt();
-        System.out.println("numero digitado elevado au quadrado e :"+(num*2));
+        javax.swing.JFrame frame = new javax.swing.JFrame();
+        frame.setAlwaysOnTop(true);
+        javax.swing.JOptionPane.showMessageDialog(frame,
+                "numero elevado a quadrado: "+(num*num),
+                "",
+                javax.swing.JOptionPane.QUESTION_MESSAGE);
+
         sc.close();
+
     }
 }
